@@ -17,7 +17,7 @@
         
         <!-- Conditionals -->
         <span v-if="seen">"Now you see me" only appears when <em>seen</em> is set to true</span>
-        <br><br>
+        <br>
 
         <!-- Loops -->
         <ol>
@@ -26,6 +26,9 @@
 
         <!-- Handling user input -->
         <button v-on:click="reverseMsg">Reverse Message</button>
+        <br><br>
+
+        <input v-model="message">
     </div>
 
     <!-- Vue instance -->
