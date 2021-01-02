@@ -7,10 +7,10 @@ let app = new Vue({
         msg2: `You loaded this page on ${new Date().toLocaleString()}`,
         seen: true,
         newYearResolutions: [
-            "Improve fitness",
-            "Move out into an apartment",
-            "Get driving license",
-            "Improve connection with God"
+            { text: "Improve fitness" },
+            { text: "Move out into an apartment" },
+            { text: "Get driving license" },
+            { text: "Improve connection with God" }
         ]
     }
 })
