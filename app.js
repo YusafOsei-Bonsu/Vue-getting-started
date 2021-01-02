@@ -5,6 +5,12 @@ let app = new Vue({
     data: {
         message: 'Hello Vue!',
         msg2: `You loaded this page on ${new Date().toLocaleString()}`,
-        seen: true
+        seen: true,
+        newYearResolutions: [
+            "Improve fitness",
+            "Move out into an apartment",
+            "Get driving license",
+            "Improve connection with God"
+        ]
     }
 })
