@@ -4,13 +4,19 @@ let app = new Vue({
     el: '#app',
     data: {
         message: 'Hello Vue!',
-        msg2: `You loaded this page on ${new Date().toLocaleString()}`,
+        message2: `You loaded this page on ${new Date().toLocaleString()}`,
         seen: true,
         newYearResolutions: [
             { text: "Improve fitness" },
             { text: "Move out into an apartment" },
             { text: "Get driving license" },
             { text: "Improve connection with God" }
-        ]
+        ],
+    },
+    methods: {
+        // Reversing the text content of the 'message' property 
+        reverseMsg: function() {
+            this.message = this.message.split('').reverse().join('')
+        }
     }
 })

@@ -12,19 +12,23 @@
     <div id="app">
         <!-- Declarative rendering -->
         <h1>{{ message }}</h1>
-        <span v-bind:title="msg2">Hover your mouse over me for a few seconds to see my dynamically bound title!</span>
+        <span v-bind:title="message2">Hover your mouse over me for a few seconds to see my dynamically bound title!</span>
         <br><br>
         
         <!-- Conditionals -->
-        <span v-if="seen">Now you see me</span>
+        <span v-if="seen">"Now you see me" only appears when <em>seen</em> is set to true</span>
         <br><br>
 
         <!-- Loops -->
         <ol>
             <li v-for="resolution in newYearResolutions">{{ resolution.text }}</li>
         </ol>
+
+        <!-- Handling user input -->
+        <button v-on:click="reverseMsg">Reverse Message</button>
     </div>
 
+    <!-- Vue instance -->
     <script src="./app.js"></script>
 </body>
 </html>
