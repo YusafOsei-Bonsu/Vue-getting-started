@@ -30,14 +30,14 @@
 
         <input v-model="message">
 
-        <ol>
+        <ul>
             <!-- Create an instance of the todo-item component -->
             <todo-item
                 v-for="item in groceryList"
                 v-bind:todo="item"
                 v-bind:key="item.id"
             ></todo-item>
-        </ol>
+        </ul>
     </div>
 
     <!-- Vue instance -->
