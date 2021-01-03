@@ -9,4 +9,4 @@ Learning about Vue v2 via [`Getting Started`](https://vuejs.org/v2/guide/) secti
 ## Blockers/Resolutions
 | Blockers | Resolutions |
 |----------|-------------|
-| Vue code wasn't rendering in DOM | Placed `app.js` above ending `body` tag.
+| Vue code wasn't rendering in DOM | Imported `app.js` above ending `body` tag.
