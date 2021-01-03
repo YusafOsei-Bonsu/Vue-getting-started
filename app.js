@@ -1,3 +1,9 @@
+// A component
+Vue.component('todo-item', {
+    props: ['todo'],
+    template: '<li>{{ todo.text }}</li>'
+});
+
 // Vue instance
 let app = new Vue({
     // Properties
@@ -12,6 +18,11 @@ let app = new Vue({
             { text: "Get driving license" },
             { text: "Improve connection with God" }
         ],
+        groceryList: [
+            {id: 0, text: "Vegetables"},
+            {id: 1, text: "Cheese"},
+            {id: 2, text: "Fruits"}
+        ]
     },
     methods: {
         // Reversing the text content of the 'message' property 
